@@ -1,0 +1,8 @@
+<h1>Result</h1>
+<% if @is_valid %>
+<h2><strong>Congratulations!</strong> <%= @message %></h2>
+<h3>You gained <%= @word_score %> points!</h3>
+<% else %>
+<p><%= @message %></p>
+<% end %>
+<%= link_to "Play again", new_path %>

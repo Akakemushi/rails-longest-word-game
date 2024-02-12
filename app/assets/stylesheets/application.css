@@ -1,15 +1,75 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.letter-card {
+  display: inline-block;
+  text-align: center;
+  background-color: rgb(91, 91, 255);
+  color: white;
+  padding: 10px;
+  margin: 5px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 2px;
+  height: 30px;
+  width: 30px;
+  box-shadow: 4px 4px 7px black;
+  line-height: 30px;
+}
+
+.form-wrapper {
+  width: 500px;
+  margin-top: 30px;
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 2px;
+  box-shadow: 4px 4px 7px black;
+  background-color: bisque;
+  padding: 10px;
+}
+
+.textbox {
+  height: 26px;
+  line-height: 26px;
+  display: inline-block;
+}
+
+.button {
+  display: inline-block;
+  line-height: 30px;
+  height: 30px;
+  background-color: blue;
+  color: white;
+  border-color: black;
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 2px;
+}
+
+.red-button {
+  display: block;
+  line-height: 30px;
+  height: 30px;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-color: black;
+  border-style: solid;
+  border-radius: 6px;
+  border-width: 2px;
+  margin-top: 10px;
+  box-shadow: 4px 4px 7px black;
+}
+
+.combo {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 5px;
+}
+
+label {
+  display: block;
+}
+
+body {
+  margin-top: 50px;
+  margin-left: 50px;
+}

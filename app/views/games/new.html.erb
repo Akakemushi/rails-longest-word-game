@@ -1,0 +1,20 @@
+<h1>New Game</h1>
+<h2>Your Score: <%= @score %> </h2>
+<% @ten_letters.each do |letter| %>
+<h2 class="letter-card"><%= letter %></h2>
+<% end %>
+<form class="form-wrapper" action="/score" method="post" data-turbo="false">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag 'letters', @ten_letters %>
+  <label for="answer">What is the longest word you can find?</label>
+  <div class="combo">
+    <input id="answer" name="answer" class="textbox" type="text" placeholder="write your word">
+    <button type="submit" class="button">Submit</button>
+  </div>
+</form>
+<form action="/new" method="post" data-turbo="false">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+<%= hidden_field_tag 'letters', @ten_letters %>
+<%= hidden_field_tag 'reset' %>
+<button class="red-button" type="submit">Reset Score</button>
+</form>
